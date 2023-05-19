@@ -1,0 +1,46 @@
+body {
+  background-image: url("./smile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 20px;
+}
+.app {
+  text-align: center;
+}
+
+h1 {
+  color: red;
+  font-size: 4rem;
+}
+
+.comment-form {
+  margin-bottom: 20px;
+}
+
+.comment-form input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.comment-form button {
+  display: block;
+  margin: 0 auto;
+}
+
+.comment-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.comment-list li {
+  margin-bottom: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+.comment-list li.highlighted {
+  background-color: pink;
+}

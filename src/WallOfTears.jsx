@@ -1,22 +1,24 @@
 import React, { useState } from "react";
 import CommentList from "./CommentList";
 import CommentForm from "./CommentForm";
-import "./styles.css";
 
-const App = () => {
+const WallOfTears = () => {
   const [comments, setComments] = useState([]);
 
   const handleAddComment = (comment) => {
-    setComments([comment, ...comments]);
+    const filteredComment = comment.replace(/жопа/gi, "***");
+    if (filteredComment.trim() !== "") {
+      setComments([filteredComment, ...comments]);
+    }
   };
 
   return (
-    <div className="app">
-      <h1>Стена плача</h1>
+    <div>
+      <h1 className="title">Стена плача</h1>
       <CommentForm onAddComment={handleAddComment} />
       <CommentList comments={comments} />
     </div>
   );
 };
 
-export default App;
+export default WallOfTears;
