@@ -12,7 +12,7 @@ const App = () => {
 
   return (
     <div className="app">
-      <h1>Стена плача</h1>
+      <h1>Стена плача. Напиши о наболевшем!</h1>
       <CommentForm onAddComment={handleAddComment} />
       <CommentList comments={comments} />
     </div>

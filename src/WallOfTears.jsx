@@ -14,7 +14,6 @@ const WallOfTears = () => {
 
   return (
     <div>
-      <h1 className="title">Стена плача</h1>
       <CommentForm onAddComment={handleAddComment} />
       <CommentList comments={comments} />
     </div>
